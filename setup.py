@@ -47,7 +47,7 @@ extensions = [
 ]
 
 setup(
-    setup_requires=['pbr'],
+    setup_requires=['pbr', 'numpy', 'Cython'],
     pbr=True,
     ext_modules=cythonize(extensions)
 )
